@@ -12,11 +12,11 @@ class AverageOfSubarrayOfSizeKTest {
 
     @Test
     void findAverages() {
-        assertArrayEquals(AverageOfSubarrayOfSizeK.findAverages(k1, arr1), result1);
+        assertArrayEquals(result1, AverageOfSubarrayOfSizeK.findAverages(k1, arr1));
     }
 
     @Test
     void findAveragesBySlidingWindow() {
-        assertArrayEquals(AverageOfSubarrayOfSizeK.findAveragesBySlidingWindow(k1, arr1), result1);
+        assertArrayEquals(result1, AverageOfSubarrayOfSizeK.findAveragesBySlidingWindow(k1, arr1));
     }
 }

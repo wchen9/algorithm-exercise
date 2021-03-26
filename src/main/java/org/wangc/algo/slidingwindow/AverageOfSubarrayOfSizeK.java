@@ -1,8 +1,6 @@
 package org.wangc.algo.slidingwindow;
 
 
-import java.util.Arrays;
-
 /**
  * 01. 给定一个数组，计算所有连续的 'K' 长度的子数组的平均数。
  */

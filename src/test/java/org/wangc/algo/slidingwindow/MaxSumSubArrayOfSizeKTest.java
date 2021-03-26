@@ -16,13 +16,13 @@ class MaxSumSubArrayOfSizeKTest {
 
     @Test
     void findMaxSumSubArray() {
-        assertEquals(MaxSumSubArrayOfSizeK.findMaxSumSubArray(k1, arr1), result1);
-        assertEquals(MaxSumSubArrayOfSizeK.findMaxSumSubArray(k2, arr2), result2);
+        assertEquals(result1, MaxSumSubArrayOfSizeK.findMaxSumSubArray(k1, arr1));
+        assertEquals(result2, MaxSumSubArrayOfSizeK.findMaxSumSubArray(k2, arr2));
     }
 
     @Test
     void findMaxSumSubArrayBySlidingWindow() {
-        assertEquals(MaxSumSubArrayOfSizeK.findMaxSumSubArrayBySlidingWindow(k1, arr1), result1);
-        assertEquals(MaxSumSubArrayOfSizeK.findMaxSumSubArrayBySlidingWindow(k2, arr2), result2);
+        assertEquals(result1, MaxSumSubArrayOfSizeK.findMaxSumSubArrayBySlidingWindow(k1, arr1));
+        assertEquals(result2, MaxSumSubArrayOfSizeK.findMaxSumSubArrayBySlidingWindow(k2, arr2));
     }
 }
