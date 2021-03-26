@@ -12,21 +12,16 @@ public class MinSizeSubArraySum {
      */
     public static int findMinSubArray(int S, int[] arr) {
         int min = Integer.MAX_VALUE;
-        boolean found = false;
         for (int i = 0; i < arr.length; i++) {
             int sum = 0;
             for (int j = i; j < arr.length; j++) {
                 sum += arr[j];
                 if (sum >= S) {
-                    found = true;
                     min = Math.min(j - i + 1, min);
                 }
             }
         }
-        if (found) {
-            return min;
-        }
-        return 0;
+        return min != Integer.MAX_VALUE ? min : 0;
     }
 
     /**

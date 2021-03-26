@@ -20,11 +20,9 @@ class MinSizeSubArraySumTest {
 
     @Test
     void findMinSubArray() {
-
         assertEquals(result1, MinSizeSubArraySum.findMinSubArray(S1, arr1));
         assertEquals(result2, MinSizeSubArraySum.findMinSubArray(S2, arr2));
         assertEquals(result3, MinSizeSubArraySum.findMinSubArray(S3, arr3));
-
     }
 
     @Test
