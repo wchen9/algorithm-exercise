@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 05. 给定一个整数数组 nums 和一个整数 'K' ，找到该数组的任意大小为 K 的连续子数组和的最大值
+ * 05. 给定字符串，寻找最长的不含重复字符子串。
  */
 public class NoRepeatSubstring {
 
@@ -23,7 +23,6 @@ public class NoRepeatSubstring {
             charIndexMap.put(rightChar, windowEnd);
             maxLength = Math.max(maxLength, windowEnd - windowStart + 1);
         }
-
         return maxLength;
     }
 
